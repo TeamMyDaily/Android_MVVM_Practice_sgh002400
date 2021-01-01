@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         todoAdapter = TodoAdapter(this)
+
+        rcv.adapter = todoAdapter
         rcv.layoutManager =LinearLayoutManager(this)
 
         todoViewModel = ViewModelProvider.AndroidViewModelFactory.getInstance(application).create(TodoViewModel::class.java)

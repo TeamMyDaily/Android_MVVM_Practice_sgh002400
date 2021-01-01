@@ -6,7 +6,7 @@
     <data>
         <variable
             name="todo"
-            type="org.techtown.mvvm_practice.MainActivity" />
+            type="org.techtown.mvvm_practice.TodoViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
